@@ -36,3 +36,5 @@ Product components -> will have detaisl around products (SKU) under that product
   2. Style-id -> Merchandise reference hierarchy id -> Here the reference element is through Style attribute
   3. Style-desc -> Decription of that style attribute
   
+Sample URL
+https://us-central1-gmart-firebase.cloudfunctions.net/app/api/read/1002
