@@ -1,0 +1,40 @@
+{
+    "id": "1002",
+    "product": {
+        "product-hier": {
+            "product-grp-name": "Mark Mens Printed Regular flit cotton",
+            "dept-grp-id": "101"       
+        },
+        "product-components": {
+            "product-details": [
+                {
+                    "product-id": "10204",
+                    "style-id": "101-S",
+                    "style-desc": "Small"
+                },
+                {
+                    "product-id": "10205",
+                    "style-id": "101-M",
+                    "style-desc": "Medium"
+                },
+                {
+                    "product-id": "10206",
+                    "style-id": "101-L",
+                    "style-desc": "Large"
+                }
+            ]
+        }
+    }
+}
+
+Details:
+id : Product group id set as id so that retreival of product components can be easy. for ex. format shirt may have different sizes, medium, large, small. there is
+one product group for specific brand shirt, individual products (Large, medium, small) are bundled under that specific shirt. 
+product hierarchy -> gives details around product group name and dept it belongs to. Men shirt can be department
+Product components -> will have detaisl around products (SKU) under that product group category
+  1. Product id -> Unique SKU number representing item that is sold on store/ecommrece
+  2. Style-id -> Merchandise reference hierarchy id -> Here the reference element is through Style attribute
+  3. Style-desc -> Decription of that style attribute
+  
+Sample URL
+https://us-central1-gmart-firebase.cloudfunctions.net/app/api/read/1002
